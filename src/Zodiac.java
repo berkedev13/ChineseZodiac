@@ -6,45 +6,20 @@ public class Zodiac {
         System.out.print("Lütfen doğum yılınızı girin: ");
         year = input.nextInt();
         year = year % 12;
-        String animal;
-        switch (year) {
-            case 0:
-                animal = "Maymun";
-                break;
-            case 1:
-                animal = "Horoz";
-                break;
-            case 2:
-                animal = "Köpek";
-                break;
-            case 3:
-                animal = "Domuz";
-                break;
-            case 4:
-                animal = "Fare";
-                break;
-            case 5:
-                animal = "Öküz";
-                break;
-            case 6:
-                animal = "Kaplan";
-                break;
-            case 7:
-                animal = "Tavşan";
-                break;
-            case 8:
-                animal = "Ejderha";
-                break;
-            case 9:
-                animal = "Yılan";
-                break;
-            case 10:
-                animal = "At";
-                break;
-            default:
-                animal = "Koyun";
-                break;
-        }
+        String animal = switch (year) {
+            case 0 -> "Maymun";
+            case 1 -> "Horoz";
+            case 2 -> "Köpek";
+            case 3 -> "Domuz";
+            case 4 -> "Fare";
+            case 5 -> "Öküz";
+            case 6 -> "Kaplan";
+            case 7 -> "Tavşan";
+            case 8 -> "Ejderha";
+            case 9 -> "Yılan";
+            case 10 -> "At";
+            default -> "Koyun";
+        };
         System.out.println("Çin Zodyağı Burcunuz :" + animal);
     }
 }
